@@ -1,0 +1,498 @@
+<!-- index.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Eric Palarca Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,700;1,300;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- SKELETON LOADER -->
+<div id="skeleton-loader" class="skeleton-container">
+  <!-- NAV -->
+  <nav class="skeleton-nav">
+    <div class="skeleton-item skeleton-logo"></div>
+    <div class="skeleton-nav-links">
+      <div class="skeleton-item skeleton-nav-link"></div>
+      <div class="skeleton-item skeleton-nav-link"></div>
+      <div class="skeleton-item skeleton-nav-link"></div>
+      <div class="skeleton-item skeleton-nav-link"></div>
+      <div class="skeleton-item skeleton-nav-link"></div>
+    </div>
+    <div class="skeleton-item skeleton-toggle"></div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="skeleton-section skeleton-hero">
+    <div class="skeleton-hero-left">
+      <div class="skeleton-item skeleton-badge"></div>
+      <div class="skeleton-item skeleton-h1"></div>
+      <div class="skeleton-item skeleton-h1"></div>
+      <div class="skeleton-item skeleton-text-sm"></div>
+      <div class="skeleton-item skeleton-text"></div>
+      <div class="skeleton-item skeleton-text"></div>
+      <div class="skeleton-item skeleton-buttons"></div>
+    </div>
+    <div class="skeleton-hero-right">
+      <div class="skeleton-item skeleton-image"></div>
+      <div class="skeleton-item skeleton-stat"></div>
+      <div class="skeleton-item skeleton-stat"></div>
+      <div class="skeleton-item skeleton-stat"></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="skeleton-section skeleton-about">
+    <div class="skeleton-about-left">
+      <div class="skeleton-item skeleton-label"></div>
+      <div class="skeleton-item skeleton-h2"></div>
+      <div class="skeleton-item skeleton-text"></div>
+      <div class="skeleton-item skeleton-text"></div>
+      <div class="skeleton-tags">
+        <div class="skeleton-item skeleton-tag"></div>
+        <div class="skeleton-item skeleton-tag"></div>
+        <div class="skeleton-item skeleton-tag"></div>
+        <div class="skeleton-item skeleton-tag"></div>
+        <div class="skeleton-item skeleton-tag"></div>
+      </div>
+    </div>
+    <div class="skeleton-about-right">
+      <div class="skeleton-item skeleton-card-sm"></div>
+      <div class="skeleton-item skeleton-card-sm"></div>
+      <div class="skeleton-item skeleton-card-sm"></div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="skeleton-section skeleton-skills">
+    <div class="skeleton-item skeleton-label"></div>
+    <div class="skeleton-item skeleton-h2"></div>
+    <div class="skeleton-grid-4">
+      <div class="skeleton-item skeleton-card"></div>
+      <div class="skeleton-item skeleton-card"></div>
+      <div class="skeleton-item skeleton-card"></div>
+      <div class="skeleton-item skeleton-card"></div>
+    </div>
+  </div>
+
+  <!-- EDUCATION & PROJECTS -->
+  <div class="skeleton-section skeleton-grid-2">
+    <div class="skeleton-item skeleton-card-lg"></div>
+    <div class="skeleton-item skeleton-card-lg"></div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="skeleton-section skeleton-contact">
+    <div class="skeleton-item skeleton-label"></div>
+    <div class="skeleton-item skeleton-h2"></div>
+    <div class="skeleton-item skeleton-text"></div>
+    <div class="skeleton-socials">
+      <div class="skeleton-item skeleton-social"></div>
+      <div class="skeleton-item skeleton-social"></div>
+      <div class="skeleton-item skeleton-social"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div id="main-content" class="content-fade">
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="logo">John Eric <span>Palarca</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button class="theme-toggle" title="Toggle dark mode">
+    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
+</nav>
+<main>
+
+<!-- HERO -->
+<div class="wrap">
+  <section id="hero">
+    <div class="hero-inner">
+
+      <div>
+        <div class="hero-eyebrow">Fresh Graduate · Open to Work</div>
+
+        <h1 class="hero-name">
+          John Eric <br>
+          <em>Palarca</em>
+        </h1>
+
+        <p class="hero-role">BSIT Graduate · Web Dev · Automation</p>
+
+        <p class="hero-desc">
+          A fresh IT graduate passionate about developing practical tech solutions
+          from Automations to web applications. Eager to contribute my programming skills, knowledge and solid fundamentals while learning from experienced professionals.
+        </p>
+
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-p">View Projects →</a>
+          <a href="#contact" class="btn btn-g">Get in Touch</a>
+        </div>
+      </div>
+
+<div class="hero-side">
+
+  <!-- PROFILE IMAGE -->
+  <div class="hero-image-wrap">
+    <img src="images/profile.png" alt="John Eric" class="hero-image">
+  </div>
+
+  <div class="hero-stats">
+
+    <div>
+      <div class="stat-num">2026</div>
+      <div class="stat-label">Graduate</div>
+    </div>
+
+    <div>
+      <div class="stat-num">BSIT</div>
+      <div class="stat-label">Degree</div>
+    </div>
+
+    <div>
+      <div class="stat-num">1</div>
+      <div class="stat-label">Project</div>
+    </div>
+
+  </div>
+
+</div>
+    </div>
+  </section>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="about-section">
+  <div class="about-inner">
+
+    <div class="about-text">
+
+      <div class="label">About Me</div>
+      <h2 class="st">Who I Am</h2>
+
+      <p>
+        Hey! I'm John Eric, a fresh BSIT graduate with a passion for building
+        tech that actually helps people. I enjoy working on automation,
+        web development, and finding creative solutions to real-world problems.
+      </p>
+
+      <p>
+        I'm eager to grow, learn fast, and contribute to a team
+        that values practical, meaningful tech.
+      </p>
+
+      <div class="tags">
+        <span class="tag">React</span>
+        <span class="tag">PHP</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Python</span>
+        <span class="tag">Java</span>
+        <span class="tag">n8n</span>
+      </div>
+
+    </div>
+
+    <div class="about-aside">
+
+      <div class="aside-card">
+        <div class="aside-card-title">Status</div>
+        <div class="aside-card-body">
+          Fresh graduate — actively looking for my first professional role in web development or IT.
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <div class="aside-card-title">Open to</div>
+        <div class="aside-card-body">
+          Junior developer roles, internships, freelance projects,
+          and entry-level IT positions.
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <div class="aside-card-title">Interests</div>
+        <div class="aside-card-body">
+          Chatbots, automation workflows, web development,
+          and building tools that solve real problems.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="wrap">
+  <section id="skills">
+
+    <div class="label">Skills</div>
+    <h2 class="st">Tech Stack</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-cat">Frontend</div>
+        <div class="skill-item html">HTML</div>
+        <div class="skill-item css">CSS</div>
+        <div class="skill-item javascript">JavaScript</div>
+        <div class="skill-item react">React</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-cat">Backend</div>
+        <div class="skill-item php">PHP</div>
+        <div class="skill-item mysql">MySQL</div>
+        <div class="skill-item python">Python</div>
+        <div class="skill-item java">Java</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-cat">Languages</div>
+        <div class="skill-item javascript">JavaScript</div>
+        <div class="skill-item python">Python</div>
+        <div class="skill-item java">Java</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-cat">Tooling</div>
+        <div class="skill-item n8n">n8n Automation</div>
+        <div class="skill-item docker">Docker Desktop</div>
+        <div class="skill-item ngrok">ngrok</div>
+        <div class="skill-item git">Git</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="section-grid">
+
+  <!-- EDUCATION -->
+  <section id="education">
+
+    <div class="label">Education</div>
+    <h2 class="st">Academic Background</h2>
+
+    <div class="edu-block">
+
+      <div>
+        <div class="edu-degree">
+          Bachelor of Science in Information Technology |Saint Joseph College Maasin City, Southern Leyte
+        </div>
+
+        <div class="edu-school">BSIT — Class of 2026</div>
+
+        <div class="edu-desc">
+          Studied core IT fundamentals including web development,
+          database management, networking,
+          and systems analysis.
+        </div>
+
+        <span class="edu-badge">Fresh Graduate</span>
+      </div>
+
+      <div class="edu-year">Graduated 2026</div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <div class="label">Projects</div>
+    <h2 class="st">What I've Built</h2>
+
+    <a href="#" class="proj-card">
+
+      <div class="proj-num">01</div>
+
+      <div class="proj-title">
+        SASOBOT — Student Affairs Chatbot
+      </div>
+
+      <div class="proj-desc">
+        A school project chatbot built for the Student Affairs and Services Office (SASO)
+        that helps students get instant answers about school activities,
+        scholarships, lost and found, and other common student concerns. This Project gave me hands-on experience with automation tools, APIs, and deployment.
+      </div>
+
+      <div class="proj-tags">
+        <span class="proj-tag">n8n Automation</span>
+        <span class="proj-tag">Docker Desktop</span>
+        <span class="proj-tag">ngrok</span>
+        <span class="proj-tag">Chatbot</span>
+      </div>
+
+      <div class="proj-link">View project →</div>
+
+    </a>
+
+  </section>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="contact-section">
+
+  <div class="contact-inner">
+
+    <div>
+      <div class="contact-label">Contact</div>
+
+      <h2 class="contact-heading">
+        Let's build <br>
+        <em>something great.</em>
+      </h2>
+    </div>
+
+    <div>
+
+      <p class="contact-sub">
+        I'm actively looking for my first role in the IT Industry.
+      </p>
+      <div class="contact-label">Phone Number: +63 992 279 4221</div>
+      
+      <a href="mailto:johneric0324@email.com" class="contact-email">
+        johneric0324@email.com
+      </a>
+
+      <div class="socials">
+        <a href="https://github.com/" class="soc">GitHub</a>
+        <a href="https://linkedin.com/" class="soc">LinkedIn</a>
+        <a href="https://facebook.com/johneric.palarcs" class="soc">Facebook</a>
+        <a href="#" class="soc">Résumé</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  John Eric Palarca — 2026
+</footer>
+</main>
+</div>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  // SKELETON LOADER
+  const skeletonLoader = document.getElementById('skeleton-loader');
+  const mainContent = document.getElementById('main-content');
+  
+  setTimeout(() => {
+    if (skeletonLoader) {
+      skeletonLoader.remove();
+    }
+  }, 4000);
+
+  const html = document.documentElement;
+  const savedTheme = localStorage.getItem('theme') || 'light';
+
+  if (savedTheme === 'dark') {
+    html.setAttribute('data-theme', 'dark');
+  }
+
+  const darkModeToggle = () => {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+
+    if (isDark) {
+      html.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+    } else {
+      html.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  };
+
+  document.querySelector('.theme-toggle').addEventListener('click', darkModeToggle);
+
+  const buttons = document.querySelectorAll('.btn, .proj-card, .soc, .tag');
+  buttons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      const ripple = document.createElement('span');
+      ripple.classList.add('ripple');
+
+      const rect = button.getBoundingClientRect();
+      ripple.style.left = `${e.clientX - rect.left}px`;
+      ripple.style.top = `${e.clientY - rect.top}px`;
+
+      button.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 600);
+    });
+  });
+
+  const cards = document.querySelectorAll('.skill-card, .aside-card');
+  cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / 20) * -1;
+      const rotateY = (x - centerX) / 20;
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  const hiddenElements = document.querySelectorAll('section, .about-section, .contact-section');
+  hiddenElements.forEach(el => {
+    el.classList.add('hidden');
+    observer.observe(el);
+  });
+});
+</script>
+
+</body>
+</html>
