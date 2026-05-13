@@ -613,7 +613,7 @@ html[data-theme='dark'] .skill-card {
 html[data-theme='dark'] .edu-block {
   background: #1a1815;
   border-color: #44403c;
-  border-left-color: #ffffff;
+  border-left-color: #green;
 }
 
 .edu-degree{
